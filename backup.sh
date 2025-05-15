@@ -108,11 +108,11 @@ create_backup() {
 
 # 根据参数执行不同的操作
 case "$1" in
-    "restore")
-        restore_backup
-        ;;
     "backup")
         create_backup
+        ;;
+    "restore")
+        restore_backup
         ;;
     *)
         echo "Usage: $0 {backup|restore}"
